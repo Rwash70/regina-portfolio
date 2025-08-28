@@ -1,5 +1,6 @@
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
+import SkillGraph from '../../components/SkillGraph/SkillGraph.jsx';
 import styles from './Home.module.css';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +10,7 @@ export default function Home() {
       <Card className={styles.homeHero}>
         <div className={styles.homeHeroText}>
           <h1 className={styles.homeTitle}>
-            I design & build fast, reliable web apps—and prove they scale.
+            I design & build fast, reliable web apps that scale.
           </h1>
           <p className={styles.homeSub}>
             Explore case studies with real metrics, code snippets, and demos.
@@ -27,8 +28,10 @@ export default function Home() {
       </Card>
 
       <Card>
-        <strong>Skill Graph (placeholder)</strong>
-        <div className={styles.homeSkillGraph}>Canvas/Chart placeholder</div>
+        <strong>Skill Graph </strong>
+        <div className={styles.homeSkillGraph}>
+          <SkillGraph height={260} />
+        </div>
       </Card>
     </div>
   );

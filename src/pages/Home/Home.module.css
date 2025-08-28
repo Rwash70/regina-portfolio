@@ -49,18 +49,35 @@
   color: var(--text);
 }
 .homeSkillGraph {
-  height: 220px;
-  border: 1px dashed rgba(167, 173, 190, 0.35);
+  height: 280px; /* desktop baseline */
+  padding: 16px; /* space so labels don’t touch edges */
   border-radius: 12px;
+  background: radial-gradient(
+      120% 120% at 80% 0%,
+      rgba(58, 163, 255, 0.08),
+      transparent 60%
+    ),
+    #121521;
+  border: 1px solid var(--ring); /* subtle outline instead of dashed */
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
   display: grid;
   place-items: center;
   color: var(--muted);
+  overflow: hidden; /* trims any long tick labels */
 }
+
+/* Responsive adjustments */
 @media (max-width: 900px) {
   .homeHero {
     grid-template-columns: 1fr;
   }
+
   .homeHeroBadge {
     margin-top: 12px;
+  }
+
+  .homeSkillGraph {
+    height: 300px; /* taller graph on smaller screens */
+    padding: 18px;
   }
 }
