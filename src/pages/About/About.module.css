@@ -1,0 +1,78 @@
+.about {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+.aboutHeader {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 16px;
+  align-items: center;
+}
+.aboutHeaderText {
+}
+.aboutTitle {
+  font: 700 36px/1.1 Georgia, serif;
+  margin: 0.2rem 0;
+}
+.aboutSub {
+  color: var(--muted);
+}
+.aboutPhotoWrap {
+  display: grid;
+  place-items: center;
+}
+.aboutPhoto {
+  width: 180px; /* adjust as needed */
+  height: 180px; /* keep square so circle works */
+  object-fit: cover; /* crops to fit nicely */
+  border-radius: 50%; /* makes it a circle */
+  border: 3px solid var(--ring); /* matches your design tokens */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* subtle shadow */
+}
+.aboutCols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.aboutContact {
+}
+.aboutLink {
+  color: var(--brand);
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.contactList a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contactList a:hover {
+  text-decoration: underline;
+}
+
+.contactList li {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 900px) {
+  .aboutHeader {
+    grid-template-columns: 1fr;
+  }
+  .aboutCols {
+    grid-template-columns: 1fr;
+  }
+}

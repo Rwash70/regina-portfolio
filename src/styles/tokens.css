@@ -1,0 +1,22 @@
+:root {
+  /* Base */
+  --bg: #0f1115; /* deep charcoal */
+  --panel: #151823; /* cards */
+  --text: #f6f7fb; /* body text */
+  --muted: #a7adbe; /* secondary */
+  --ring: #2b2f3a; /* borders */
+
+  /* Brand */
+  --brand: #1e90ff; /* BLUE: primary brand */
+  --accent: #f5990b; /* ORANGE: tiny highlight/accent only */
+
+  /* Sizing */
+  --radius: 14px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Optional alternate theme (toggle by setting data-theme="warm" on <html>) */
+html[data-theme='warm'] {
+  --brand: #10b981; /* Emerald primary */
+  --accent: #34d399; /* Mint accent */
+}

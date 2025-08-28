@@ -1,0 +1,83 @@
+.projects {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+.projectsToolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.projectsSearch {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--ring);
+  background: #121521;
+  color: var(--text);
+}
+.projectsTabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.projectsTab {
+  padding: 6px 10px;
+  border: 1px solid var(--ring);
+  border-radius: 10px;
+  background: #11141c;
+  color: var(--text);
+  cursor: pointer;
+}
+.projectsTabActive {
+  background: #1b2030;
+  border-color: #3a4256;
+  color: var(--brand);
+}
+.projectsGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+.projectsCardLink {
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.12s ease;
+}
+.projectsCardLink:hover {
+  transform: translateY(-3px);
+}
+.projectsYear {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #222630;
+  color: var(--muted);
+  border: 1px solid #2c3240;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.projectsTitle {
+}
+.projectsSummary {
+  color: var(--muted);
+}
+.projectsChips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.projectsChip {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #0f121a;
+  border: 1px solid var(--ring);
+  color: var(--muted);
+  font-size: 12px;
+}

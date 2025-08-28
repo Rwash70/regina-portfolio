@@ -1,0 +1,31 @@
+.buildLog {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+}
+.buildLogTitle {
+  font: 700 36px/1.1 Georgia, serif;
+  margin: 0.2rem 0;
+}
+.buildLogSub {
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+.buildLogEntry {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.buildLogDate {
+  min-width: 120px;
+  padding: 6px 10px;
+  border: 1px solid var(--ring);
+  border-radius: 8px;
+  color: var(--muted);
+  text-align: center;
+}
+.buildLogNote {
+  color: var(--text);
+}

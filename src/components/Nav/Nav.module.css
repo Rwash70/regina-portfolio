@@ -1,0 +1,71 @@
+/* Wrapper for the whole navbar (sticky header) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(15, 17, 21, 0.6);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--ring);
+}
+
+/* Inner layout container (centers content and spaces brand/links) */
+.navbarContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand area (logo + name) */
+.navbarBrand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* 0.6rem → 10px */
+  opacity: 0.95;
+}
+
+/* Brand parts, in case you want to tweak them independently later */
+.navbarBrandLogo {
+  display: block;
+}
+.navbarBrandName {
+  font-weight: 700;
+}
+
+/* Container for nav links */
+.navbarLinks {
+  display: inline-flex;
+  gap: 14px;
+  padding: 8px 12px;
+}
+
+/* Base link style for all navbar links */
+.navbarLink {
+  display: inline-block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  opacity: 0.85;
+  transition: opacity 0.12s ease, transform 0.12s ease,
+    background-color 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+
+/* Hover/focus state */
+.navbarLink:hover,
+.navbarLink:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+  background: #121521;
+  border: 1px solid var(--ring);
+  outline: none;
+}
+
+/* Active link (current route) */
+.navbarLinkActive {
+  opacity: 1;
+  color: var(--brand);
+  background: #121521;
+  border: 1px solid var(--ring);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
