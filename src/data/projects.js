@@ -12,8 +12,8 @@ export const projects = [
     outcome:
       'Faster entry and fewer missed follow-ups; clear pipeline and lightweight analytics.',
     links: {
-      demo: '#',
-      repo: 'https://github.com/yourname/careersnap',
+      demo: 'https://bejewelled-taffy-88ec6a.netlify.app',
+      repo: 'https://github.com/Rwash70/career-snap.git',
     },
 
     // Add your real numbers here
@@ -74,8 +74,8 @@ export function requireAuth(req,res,next){
     outcome:
       'Reduced friction for personal finance tracking; users can log expenses quickly and see instant insights via charts.',
     links: {
-      demo: '#',
-      repo: 'https://github.com/yourname/budget-tracker',
+      demo: 'https://budget-tracker2025.netlify.app',
+      repo: 'https://github.com/Rwash70/BudgetTracker-App.git',
     },
     evidence: {
       metrics: [

@@ -17,22 +17,22 @@
 .homeTitle {
   font: 700 44px/1.1 Georgia, serif;
   letter-spacing: -0.2px;
-  margin: 0 0 6px; /* 0.4rem → 6px */
+  margin: 0 0 6px;
 }
 .homeSub {
-  color: #a7adbe; /* replaced var(--muted) */
+  color: #a7adbe;
   margin: 0;
 }
 .homeActions {
   display: flex;
-  gap: 12px; /* 0.75rem → 12px */
-  margin-top: 16px; /* 1rem → 16px */
+  gap: 12px;
+  margin-top: 16px;
   flex-wrap: wrap;
 }
 .homeLink {
-  padding: 8px 12px; /* 0.5rem 0.75rem → 8px 12px */
+  padding: 8px 12px;
   border: 1px solid var(--ring);
-  border-radius: 8px; /* 0.5rem → 8px */
+  border-radius: 8px;
 }
 .homeHeroBadge {
   width: 112px;
@@ -49,8 +49,8 @@
   color: var(--text);
 }
 .homeSkillGraph {
-  height: 280px; /* desktop baseline */
-  padding: 16px; /* space so labels don’t touch edges */
+  height: 280px;
+  padding: 16px;
   border-radius: 12px;
   background: radial-gradient(
       120% 120% at 80% 0%,
@@ -58,15 +58,27 @@
       transparent 60%
     ),
     #121521;
-  border: 1px solid var(--ring); /* subtle outline instead of dashed */
+  border: 1px solid var(--ring);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
   display: grid;
   place-items: center;
   color: var(--muted);
-  overflow: hidden; /* trims any long tick labels */
+  overflow: hidden;
+
+  animation: fadeInScale 0.9s ease-out;
 }
 
-/* Responsive adjustments */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 @media (max-width: 900px) {
   .homeHero {
     grid-template-columns: 1fr;
@@ -77,7 +89,7 @@
   }
 
   .homeSkillGraph {
-    height: 300px; /* taller graph on smaller screens */
+    height: 300px;
     padding: 18px;
   }
 }
