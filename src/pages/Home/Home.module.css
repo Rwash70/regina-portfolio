@@ -13,6 +13,8 @@
   align-items: center;
 }
 .homeHeroText {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .homeTitle {
   font: 700 44px/1.1 Georgia, serif;
@@ -37,7 +39,7 @@
 .homeHeroBadge {
   width: 112px;
   height: 112px;
-  border-radius: 18px;
+  border-radius: 50%;
   display: grid;
   place-items: center;
   background: radial-gradient(80% 80% at 50% 20%, var(--accent), transparent),
@@ -68,6 +70,11 @@
   animation: fadeInScale 0.9s ease-out;
 }
 
+.chart-box {
+  width: 100%;
+  max-width: 400px; /* desktop size */
+}
+
 @keyframes fadeInScale {
   from {
     opacity: 0;
@@ -91,5 +98,9 @@
   .homeSkillGraph {
     height: 300px;
     padding: 18px;
+  }
+
+  .chart-box {
+    max-width: 320px;
   }
 }

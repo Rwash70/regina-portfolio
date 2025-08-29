@@ -50,7 +50,7 @@ export default function SkillGraph({ height = 260 }) {
   return (
     <div style={{ width: '100%', height }} aria-label='Skill graph'>
       <ResponsiveContainer>
-        <RadarChart data={data} outerRadius='90%'>
+        <RadarChart data={data} outerRadius='80%'>
           <defs>
             <linearGradient id='rg' x1='0' y1='0' x2='0' y2='1'>
               <stop offset='0%' stopColor='var(--brand)' stopOpacity='0.55' />
